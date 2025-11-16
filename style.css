@@ -1,0 +1,150 @@
+/****** RESET *******/
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.text_box {
+background-color: #232931;
+background-color: #9AB357;
+width: 810px;
+height: 468px;
+flex-shrink: 0;
+filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 12px;
+}
+nav ul {
+display: flex;
+font-family: inter;
+font-weight: semi-bold;
+color: #333333;
+justify-content: center;
+gap: 40px;
+align-items: center;
+padding-top: 50px;
+list-style: none;
+margin: 25px;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: inter;
+    font-weight: medium;
+    color: #EFEFEF;
+    font-size: 128px;
+    margin-bottom: auto;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: none;
+}
+.off {
+    display: none;
+}
+.start {
+    width: 96px;
+    height: 35px;
+    background-color: #A0CCFF;
+    border-radius: 5px;
+}
+.main {
+    margin: 80px;
+}
+
+.restart{
+    background: none;
+
+}
+.music{
+    background: none;
+}
+.buttons {
+display: flex;
+gap: 15px;
+}
+nav ul a{
+    text-decoration: none;
+    color: #333333;
+}
+nav ul a:hover{
+text-decoration: none;
+color: #f60000;
+}
+nav a.active {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    font-weight: bold;
+    text-underline-offset: 10px;
+    color: #FFFFFF;
+}
+body {
+    background-image: url("../img/totoro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+body {
+    background-image: url("../img/totoro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Füge diese drei Zeilen hinzu: */
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin: 40px; 
+    }
+
+    #musicOptions {
+    display: none; /* versteckt */
+    position: absolute;
+    top: 150px; /* je nach Layout anpassen */
+    right: 50px;
+    background-color: rgba(35, 41, 49, 0.95);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: inter;
+}
+
+.track {
+    padding: 8px 12px;
+    background-color: #A0CCFF;
+    color: #232931;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.track:hover {
+    background-color: #79a1e1;
+}
+.music-stop {
+    background: none;
+    cursor: pointer;
+}
+.music-stop i {
+    font-size: 24px;
+    color: #EFEFEF;
+}
+.music-play {
+    background: none;
+    cursor: pointer;
+}
+.music-play {
+    font-size: 24px;
+    color: #EFEFEF;
+}

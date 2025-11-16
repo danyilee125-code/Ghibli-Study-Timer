@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Study Timer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+</head>
+<body>
+    
+    <main>
+    <div class="text_box">
+            <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="focus.html" class="active">Focus</a></li>
+                <li><a href="break.html">Break</a></li>
+                <li><a href="rest.html">Rest</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Linie -->
+        <img src="assets/img/icons/line.svg" alt="white line">
+        <!-- Timer -->
+         <!-- Buttons -->
+          <div class="main">
+         <p class="timer" id="timer">30:00</p>
+
+         <!-- Buttons -->
+
+         <div class="buttons">
+          <button class="restart">
+        <i class="iconoir-refresh"></i>
+
+        </button>
+
+          <button class="start">Start
+          </button>
+          <!-- Musik-Button (Play/Pause Toggle) -->
+<button class="music-play">
+  <i class="iconoir-play"></i>
+</button>
+
+<!-- Musik-Optionen Menü (versteckt) -->
+<div id="musicOptions" class="off">
+    <div class="track" data-src="assets/audio/GO_CORTIS.mp3">Go</div>
+    <div class="track" data-src="assets/audio/ocean_sounds.mp3">Ocean Sounds</div>
+    <div class="track" data-src="assets/audio/plane_sounds.mp3">Plane Sounds</div>
+    <div class="track" data-src="assets/audio/rain_sounds.mp3">Rain Sounds</div>
+    <div class="track" data-src="assets/audio/Reflections_classic.mp3">Classic Sounds</div>
+</div>
+
+<!-- Audio Player unsichtbar -->
+<audio id="bgAudio" loop></audio>
+         </div>
+          </div>
+
+    </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
